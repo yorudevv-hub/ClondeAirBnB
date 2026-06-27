@@ -1,0 +1,25 @@
+{
+  "name": "aribnb",
+  "version": "1.0.0",
+  "description": "clon de pagina de airbnb",
+  "homepage": "https://github.com/yorudevv-hub/Clon-de-AirBnB#readme",
+  "bugs": {
+    "url": "https://github.com/yorudevv-hub/Clon-de-AirBnB/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yorudevv-hub/Clon-de-AirBnB.git"
+  },
+  "license": "ISC",
+  "author": "Yorudevv",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.99.0"
+  }
+}
