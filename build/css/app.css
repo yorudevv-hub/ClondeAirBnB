@@ -407,3 +407,18 @@ a {
     margin-top: 30rem;
   }
 }
+.header__busqueda-boton {
+  background-color: #e8505b;
+  padding: 2rem 4rem;
+  color: #FFFFFF;
+  margin-top: 1rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+}
+@media (min-width: 768px) {
+  .header__busqueda-boton {
+    display: inline-block;
+  }
+}

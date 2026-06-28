@@ -14,5 +14,9 @@
         }
     }
 
+    &__busqueda-boton{
+        @include m.boton(v.$primario, v.$blanco)
+    }
+
 }
 
