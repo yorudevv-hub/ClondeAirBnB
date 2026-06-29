@@ -513,3 +513,41 @@ a {
 .destino__nombre, .destino__distancia {
   margin: 0;
 }
+
+.lugares__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 30rem);
+  column-gap: 4rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.lugares__grid > * {
+  scroll-snap-align: center;
+}
+@media (min-width: 768px) {
+  .lugares__grid {
+    overflow-x: auto;
+  }
+}
+@media (min-width: 768px) {
+  .lugares__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .lugares__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.lugar__imagen {
+  border-radius: 1rem;
+}
+.lugar__nombre {
+  font-size: 1.8rem;
+}
