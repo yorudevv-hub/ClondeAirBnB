@@ -611,3 +611,35 @@ a {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+.experiencias__listado {
+  display: grid;
+  grid-template-columns: repeat(3, 30rem);
+  column-gap: 2rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.experiencias__listado > * {
+  scroll-snap-align: center;
+}
+@media (min-width: 768px) {
+  .experiencias__listado {
+    overflow-x: auto;
+  }
+}
+@media (min-width: 768px) {
+  .experiencias__listado {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.experiencia__imagen {
+  border-radius: 1rem;
+}
+.experiencia__titulo {
+  font-weight: 700;
+  font-size: 2rem;
+}
