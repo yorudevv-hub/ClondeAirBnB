@@ -369,6 +369,10 @@ a {
   text-decoration: none;
 }
 
+[class$=__heading] {
+  margin: 2rem 0;
+}
+
 .barra {
   display: none;
 }
@@ -453,6 +457,7 @@ a {
 }
 .header__busqueda {
   margin-top: 5rem;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .header__busqueda {
@@ -460,9 +465,9 @@ a {
   }
 }
 .header__busqueda-boton {
-  background-color: #e8505b;
+  background-color: #FFFFFF;
   padding: 2rem 4rem;
-  color: #FFFFFF;
+  color: #e8505b;
   margin-top: 1rem;
   border-radius: 3rem;
   font-size: 2rem;
@@ -473,4 +478,38 @@ a {
   .header__busqueda-boton {
     display: inline-block;
   }
+}
+
+.destinos__grid {
+  display: grid;
+  gap: 2;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .destinos__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .destinos__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.destino {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+.destino__imagen {
+  width: 14rem;
+  height: 14rem;
+}
+.destino__nombre, .destino__distancia {
+  margin: 0;
 }
